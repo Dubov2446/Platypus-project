@@ -4,6 +4,7 @@ Platypus-project finals week
 # Responsibilities
 Artem Suprun:
 - Header file
+  - accessors & mutators
 - Member Funcitons
   - default constructor & constructor
   - hatch Funciton
@@ -11,6 +12,7 @@ Artem Suprun:
 
 Josue Lopez:
 - Driver file
+  - main
 - Member Functions
   - print Funciton
   - ageMe Function
