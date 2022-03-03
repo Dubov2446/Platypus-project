@@ -9,7 +9,7 @@ Artem Suprun:
   - hatch Funciton
   - eat Function
 
-Josue Lopez
+Josue Lopez:
 - Driver file
 - Member Functions
   - print Funciton
