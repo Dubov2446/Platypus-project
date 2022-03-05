@@ -31,8 +31,8 @@ Platypus-project finals week
 
 ## Platypus Function List
 | Location | Function | Function Type |
-| --- | --- |
-| platypus.h |
+| --- | --- | --- |
+| platypus.h | --- | --- |
 | --- | Platypus() | constructor |
 | --- | Platypus(char, float, short, string) | overloaded constructor |
 | --- | ~Platypus() | destructor |
