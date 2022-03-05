@@ -24,17 +24,17 @@ Platypus Platypus::fight(Platypus right){ // data type for function
 }
 
 void Platypus::print(){
-    cout << "Weight: " << this->getweight() << endl;
-    cout << "Age: " << this->getAge() << endl;
-    cout << "Name: " << this->getName() << endl;
-    cout << "Gender: " << this->getGender() << endl;
-    if(this->getAlive()){
+    cout << "Weight: " << this->getweight << endl;
+    cout << "Age: " << this->getAge << endl;
+    cout << "Name: " << this->getName << endl;
+    cout << "Gender: " << this->getGender << endl;
+    if(this->getAlive){
         cout << "They are alive" << endl;
     }
     else{
         cout << "They are not alive" << endl;
     }
-    if(this->getMutant()){
+    if(this->getMutant){
         cout << "They are mutant" << endl;
     }
     else{
