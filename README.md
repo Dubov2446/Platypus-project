@@ -48,6 +48,8 @@ Platypus-project finals week
 | void setAlive(bool) | platypus.h | mutator |
 | void setMutant(bool) | platypus.h | mutator |
 | void print() | platypus.h | member function |
+| void ageMe() | platypus.h | member function |
 | void fight(Platypus) | platypus.h | member function |
 | void eat() | platypus.h | member function |
 | Platypus hatch() | platypus.h | member function |
+| string randName(char) | platypus.h | help function
