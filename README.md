@@ -30,4 +30,4 @@ Platypus-project finals week
 | Platypus | private | bool | mutant | false |
 
 ## Platypus Function List
-
+ 
