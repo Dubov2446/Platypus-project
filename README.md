@@ -41,6 +41,13 @@ Platypus-project finals week
 | char getGender() | platypus.h | accessor |
 | bool getAlive() | platypus.h | accessor |
 | bool getMutant() | platypus.h | accessor |
-
-
+| void setWeight(float) | platypus.h | mutator |
+| void setAge(short) | platypus.h | mutator |
+| void setName(string) | platypus.h | mutator |
+| void setGender(char) | platypus.h | mutator |
+| void setAlive(bool) | platypus.h | mutator |
+| void setMutant(bool) | platypus.h | mutator |
 | void print() | platypus.h | member function |
+| void fight(Platypus) | platypus.h | member function |
+| void eat() | platypus.h | member function |
+| Platypus hatch() | platypus.h | member function |
