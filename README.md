@@ -1,6 +1,5 @@
 # Platypus-project
 Platypus-project finals week
-<hr />
 
 ## Responsibilities
 ### Artem Suprun:
