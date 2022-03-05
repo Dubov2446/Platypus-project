@@ -11,6 +11,25 @@
 #include "platypus.h"
 using std::cout, std::endl;
 
+Platypus::Platypus()
+{
+    weight = 0.0;
+    age = 0;
+    name = "";
+    gender = '';
+    alive = false;
+    mutant = false;
+}
+Platypus::Platypus(char g, float w, short a, std::string n)
+{
+    gender = g;
+    weight = w;
+    age = a;
+    name = n;
+    alive = true;
+    mutant = false;
+}
+
 // FIGHT FUNCTION IS NOT DONE, NEED TO LOOK AT THIS A BIT MORE
 Platypus Platypus::fight(Platypus right){ // data type for function
     int randomNumber;                   // Platypus or void?
