@@ -7,78 +7,84 @@
 
 // constructors
 Platypus()
-  Precondition:
-  Postcondition:
+    Precondition:   An instance of Platypus is declared.
+    Postcondition:  weight and age are initialized to 0;
+                    name is initialized to "";
+                    gender is initialized to '';
+                    alive and mutant are initialized to false.
 Platypus(char, float, short, string)
-  Precondition:
-  Postcondition:
+    Precondition:   An instance of Platypus is declared.
+    Postcondition:  gender, weight, age, and name are
+                    initialized to parameter values;
+                    alive is initialized to true;
+                    mutant is initialized to false.
 
 // destructor
 ~Platypus()
-  Precondition:
-  Postcondition:
+    Precondition:   End block.
+    Postcondition:  Platyus Instance is removed from memory.
   
 // mutators
 void setWeight(float)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  weight is set to parameter value.
 void setAge(short)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  age is set to parameter value.
 void setName(string)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  name is set to parameter value.
 void setGender(char)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  gender is set to parameter value.
 void setAlive(bool)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  alive is set to parameter value.
 void setMutant(bool)
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  mutant is set to parameter value.
 
 // accessors
 float getWeight()
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of weight.
 short getAge()
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of age.
 string getName()
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of name.
 char getGender()
-  Precondition:
-  Postcondition:
-bool isAlive()
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of gender.
+bool getAlive()
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of alive.
 bool getMutant()
-  Precondition:
-  Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  return value of mutant.
 
 // other public member functions
 void ageMe()
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
 void fight(Platypus)
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
 void eat()
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
 void hatch()
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
 void print()
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
   
 // helper member functions
 string randName(char)
-  Precondition:
-  Postcondition:
+    Precondition:
+    Postcondition:
 
 */
 
