@@ -30,16 +30,17 @@ Platypus-project finals week
 | Platypus | private | bool | mutant | false |
 
 ## Platypus Function List
-| Location | Function | Function Type |
+| Function | Located | Function Type |
 | --- | --- | --- |
-| platypus.h | --- | --- |
-| --- | Platypus() | constructor |
-| --- | Platypus(char, float, short, string) | overloaded constructor |
-| --- | ~Platypus() | destructor |
-| --- | float getWeight() | accessor |
-| --- | short getAge() | accessor |
-| --- | string getName() | accessor |
-| --- | char getGender() | accessor |
-| --- | bool getAlive() | accessor |
-| --- | bool getMutant() | accessor |
-| --- | void print() | member function |
+| Platypus() | platypus.h | constructor |
+| Platypus(char, float, short, string) | platypus.h | overloaded constructor |
+| ~Platypus() | platypus.h | destructor |
+| float getWeight() | platypus.h | accessor |
+| short getAge() | platypus.h | accessor |
+| string getName() | platypus.h | accessor |
+| char getGender() | platypus.h | accessor |
+| bool getAlive() | platypus.h | accessor |
+| bool getMutant() | platypus.h | accessor |
+
+
+| void print() | platypus.h | member function |
