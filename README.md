@@ -30,4 +30,16 @@ Platypus-project finals week
 | Platypus | private | bool | mutant | false |
 
 ## Platypus Function List
- 
+| Function | Function Type |
+| --- | --- |
+| platypus.h |
+| Platypus() | constructor |
+| Platypus(char, float, short, string) | overloaded constructor |
+| ~Platypus() | destructor |
+| float getWeight() | accessor |
+| short getAge() | accessor |
+| string getName() | accessor |
+| char getGender() | accessor |
+| bool getAlive() | accessor |
+| bool getMutant() | accessor |
+| void print() | member function |
