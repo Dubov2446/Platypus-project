@@ -66,25 +66,55 @@ bool getMutant()
 
 // other public member functions
 void ageMe()
-    Precondition:
-    Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  Increments teh object's age value;
+                    with a 2% chance of turing mutant true;
+                    and has a chance of becoming dead.
+                    The "death" chance is calculated by
+                    10 * (object's weight value).
+                    (e.g. 10 * 5 = 50%)
 void fight(Platypus)
-    Precondition:
-    Postcondition:
+    Precondition:   Two Platypus instances: calling instance,
+                    and the parameter.
+    Postcondition:  The calling instance will attack the
+                    parameter instance, the survivor is
+                    calculated with the "fight ratio" with
+                    a random value between 1 to 100;
+                    fight ratio: (calling / parameter) * 50.
+                    If the random value is less than the
+                    fight ratio, the calling survives;
+                    If it's more than the fight ratio,
+                    the parameter survives.
 void eat()
-    Precondition:
-    Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  Increases the weight value of the
+                    Platypus object by a random amount
+                    between 0.1% to 5.0% of its current
+                    weight value.
 void hatch()
-    Precondition:
-    Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  Randomly creates a newborn Platypus;
+                    alive is initialized to true;
+                    mutant is initialized to false;
+                    age is initialized to 0;
+                    gender is initialized to
+                    either f or m, randomly;
+                    weight is randomly initialized
+                    between 0.1  and 1.0;
+                    name is randomly chosen by the
+                    randName() function.
+                    
 void print()
-    Precondition:
-    Postcondition:
+    Precondition:   Platypus instance exists.
+    Postcondition:  Displays the attributes of the
+                    Platypus instance.
   
 // helper member functions
 string randName(char)
-    Precondition:
-    Postcondition:
+    Precondition:   Called by other member functions with
+                    gender value in the parameter.
+    Postcondition:  Returns a random name based on the
+                    value of the gender variable (m/f).
 
 */
 
