@@ -11,7 +11,7 @@
 #include <ctime> // for random number
 #include <iostream> // for cout, cin, endl
 #include "platypus.h"
-using std::cout, std::endl;
+using namespace std;
 
 Platypus::Platypus()
 {
@@ -22,7 +22,7 @@ Platypus::Platypus()
     alive = false;
     mutant = false;
 }
-Platypus::Platypus(char g, float w, short a, std::string n)
+Platypus::Platypus(char g, float w, short a, string n)
 {
     gender = g;
     weight = w;
@@ -33,7 +33,7 @@ Platypus::Platypus(char g, float w, short a, std::string n)
 }
 
 // FIGHT FUNCTION IS NOT DONE, NEED TO LOOK AT THIS A BIT MORE
-Platypus Platypus::fight(Platypus right){ // data type for function
+void Platypus::fight(Platypus right){ // data type for function
     int randomNumber;                   // Platypus or void?
     srand(time(NULL));
     randomNumber = rand() % (100) + 1;
@@ -45,7 +45,7 @@ Platypus Platypus::fight(Platypus right){ // data type for function
 }
 
 void Platypus::print(){
-    cout << "Weight: " << this->getweight() << endl;
+    cout << "Weight: " << this->getWeight() << endl;
     cout << "Age: " << this->getAge() << endl;
     cout << "Name: " << this->getName() << endl;
     cout << "Gender: " << this->getGender() << endl;
