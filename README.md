@@ -1,6 +1,7 @@
 # Platypus-project
 Platypus-project finals week
 
+
 ## Responsibilities
 ### Artem Suprun:
 - Header file
@@ -11,6 +12,7 @@ Platypus-project finals week
   - eat Function
 <hr />
 
+
 ### Josue Lopez:
 - Driver file
   - main
@@ -18,6 +20,7 @@ Platypus-project finals week
   - print Funciton
   - ageMe Function
   - fight Function
+  
 
 ## Platypus Data Dictionary
 | Class | Status | Data Type | Name | initialized |
@@ -28,6 +31,7 @@ Platypus-project finals week
 | Platypus | private | char | gender | false |
 | Platypus | private | bool | alive | false |
 | Platypus | private | bool | mutant | false |
+
 
 ## Platypus Function List
 | Function | Located | Function Type |
