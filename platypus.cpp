@@ -41,13 +41,13 @@ void Platypus::eat()
     return;
 }
 
-string randName(char g)
+string Platypus::randName(char g)
 {
     string name;
     ifstream fin;
     int num,
         size;
-    count = 0;
+    size = 0;
     
     if (g == 'm')
         fin.open("m_name.txt");
@@ -67,7 +67,7 @@ string randName(char g)
     return name;
 }
 
-int fileSize(ifstream& fin)
+int Platypus::fileSize(ifstream& fin)
 {
     int size;
     while (!fin.eof())
@@ -77,7 +77,7 @@ int fileSize(ifstream& fin)
     return size;
 }
 
-float randNum(int end, int addon, bool convert)
+float Platypus::randNum(int end, int addon, bool convert)
 {
     float value;
     srand(time(NULL));
