@@ -146,7 +146,7 @@ private:
     // helper functions
     std::string randName(char);
     float randNum(int, int addon = 0, bool convert = false);
-    int fileSize(ifstream&);
+    int fileSize(std::ifstream&);
 public:
     // constructors
     Platypus();

@@ -49,9 +49,9 @@ string randName(char g)
         size;
     count = 0;
     
-    if (g == m)
+    if (g == 'm')
         fin.open("m_name.txt");
-    else if (g == f)
+    else if (g == 'f')
         fin.open("f_name.txt");
         
     if (!fin)   // exists if there's an error
