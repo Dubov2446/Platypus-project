@@ -117,10 +117,14 @@ string randName(char)
                     value of the gender variable (m/f).
 float randNum(int, int, bool)
     Precondition:   Called by other member functions with
-                    3 double values. first is the starting
-                    value, second is the ending value, and
-                    the third is a bool. while true
+                    3 double values. first is the ending
+                    value, second is the additional value,
+                    and the third is a bool. while true
                     converts the random value to %.
+    Postcondition:  Returns a random value.
+int fileSize(ifstream&)
+    Precondition:
+    Postcondition:
 
 */
 
@@ -128,6 +132,7 @@ float randNum(int, int, bool)
 #define PLATYPUS_H
 
 #include <string>
+#include <fstream>
 
 class Platypus
 {
@@ -140,7 +145,8 @@ private:
     bool mutant;
     // helper functions
     std::string randName(char);
-    float randNum(int, int, bool convert = false);
+    float randNum(int, int addon = 0, bool convert = false);
+    int fileSize(ifstream&);
 public:
     // constructors
     Platypus();
