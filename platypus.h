@@ -115,6 +115,12 @@ string randName(char)
                     gender value in the parameter.
     Postcondition:  Returns a random name based on the
                     value of the gender variable (m/f).
+double randNum(double, double, double)
+    Precondition:   Called by other member functions with
+                    3 double values. first is the starting
+                    value, second is the ending value, and
+                    the third is a bool. while true
+                    converts the random value to %.
 
 */
 
@@ -134,6 +140,7 @@ private:
     bool mutant;
     // helper functions
     std::string randName(char);
+    double randNum(double, double, bool);
 public:
     // constructors
     Platypus();

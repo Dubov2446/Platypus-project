@@ -10,6 +10,7 @@ Platypus-project finals week
   - default constructor & constructor
   - hatch Funciton
   - eat Function
+  - helper Functions
 <hr />
 
 
