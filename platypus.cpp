@@ -10,8 +10,8 @@
                    // successful and random num
 #include <ctime> // for random number
 #include <iostream> // for cout, cin, endl
-#include <cmath>
-#include <fstream>
+#include <cmath> // pow()
+#include <fstream> // ifstream
 #include "platypus.h"
 using namespace std;
 
