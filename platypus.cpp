@@ -75,10 +75,9 @@ string Platypus::randName(char g)
     size = fileSize(fin);
     fin.clear();
     fin.seekg(0, ios::beg);
-    num = randNum(20, 1);
-    cout << num;
-    //for (int i = 0; i < num; i++)
-    //    fin >> name;
+    num = static_cast<int>( randNum(size, 1));
+    for (int i = 0; i < num; i++)
+        fin >> name;
     fin.close();
     return name;
 }
@@ -93,6 +92,7 @@ int Platypus::fileSize(ifstream& fin)
         if (temp != "\n")
             size++;
     }
+    cout << size << endl;
     return size;
 }
 
