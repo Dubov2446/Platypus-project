@@ -44,12 +44,11 @@ void Platypus::eat()
 string Platypus::randName(char g)
 {
     string name;
-    ifstream fin;
     int num,
         size;
-    size = 0;
+    ifstream fin;
     
-    if (g == 'm')
+    if (g == 'm')   // opens file depending on gender
         fin.open("m_name.txt");
     else if (g == 'f')
         fin.open("f_name.txt");
@@ -58,6 +57,9 @@ string Platypus::randName(char g)
         exit(0);
     
     size = fileSize(fin);
+    fin.clear();
+    fin.seekg(0, ios::beg);
+    cout << size;
     num = randNum(size, 1);
     
     for (int i = 0; i < num; i++)
@@ -69,7 +71,7 @@ string Platypus::randName(char g)
 
 int Platypus::fileSize(ifstream& fin)
 {
-    int size;
+    int size = 0;
     while (!fin.eof())
     {
         size++;

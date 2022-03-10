@@ -123,8 +123,9 @@ float randNum(int, int, bool)
                     converts the random value to %.
     Postcondition:  Returns a random value.
 int fileSize(ifstream&)
-    Precondition:
-    Postcondition:
+    Precondition:   Called by other member functions with
+                    input file class in the parameter.
+    Postcondition:  Returns the total number of names.
 
 */
 
