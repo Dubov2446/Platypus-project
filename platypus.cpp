@@ -115,10 +115,10 @@ void Platypus::fight(Platypus right){ // data type for function
 }
 
 void Platypus::print(){
-    cout << "Weight: " << this->getWeight() << endl;
-    cout << "Age: " << this->getAge() << endl;
-    cout << "Name: " << this->getName() << endl;
-    cout << "Gender: " << this->getGender() << endl;
+    cout << "Weight: " << getWeight() << endl;
+    cout << "Age: " << getAge() << endl;
+    cout << "Name: " << getName() << endl;
+    cout << "Gender: " << getGender() << endl;
     if(this->getAlive()){
         cout << "They are alive" << endl;
     }
