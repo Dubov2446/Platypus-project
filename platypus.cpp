@@ -75,11 +75,10 @@ string Platypus::randName(char g)
     size = fileSize(fin);
     fin.clear();
     fin.seekg(0, ios::beg);
-    num = static_cast<int>(randNum(size, 1, 1));
+    num = randNum(20, 1);
     cout << num;
-    for (int i = 0; i < num; i++)
-        fin >> name;
-    
+    //for (int i = 0; i < num; i++)
+    //    fin >> name;
     fin.close();
     return name;
 }
