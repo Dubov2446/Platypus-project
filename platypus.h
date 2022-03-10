@@ -171,7 +171,7 @@ public:
     void ageMe();
     void fight(Platypus);
     void eat();
-    Platypus hatch();
+    void hatch();
     void print();
 };
 

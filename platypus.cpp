@@ -42,18 +42,18 @@ void Platypus::eat()
     return;
 }
 
-Platypus Platypus::hatch()
+void Platypus::hatch()
 {
-    Platypus p1;
-    p1.setAlive(true);
-    p1.setMutant(false);
-    p1.setAge(0);
+    
+    this->setAlive(true);
+    this->setMutant(false);
+    this->setAge(0);
     if (randNum(2) == 1)
-        p1.setGender('m');
+        this->setGender('m');
     else
-        p1.setGender('f');
-    p1.setWeight(randNum(10, 1, 1));
-    p1.setName( randName( p1.getGender()));
+        this->setGender('f');
+    this->setWeight(randNum(10, 1, 1));
+    this->setName( randName( p1.getGender()));
     return p1;
 }
 
@@ -115,10 +115,10 @@ void Platypus::fight(Platypus right){ // data type for function
 }
 
 void Platypus::print(){
-    cout << "Weight: " << getWeight() << endl;
-    cout << "Age: " << getAge() << endl;
-    cout << "Name: " << getName() << endl;
-    cout << "Gender: " << getGender() << endl;
+    cout << "Weight: " << this->getWeight() << endl;
+    cout << "Age: " << this->getAge() << endl;
+    cout << "Name: " << this->getName() << endl;
+    cout << "Gender: " << this->getGender() << endl;
     if(this->getAlive()){
         cout << "They are alive" << endl;
     }
