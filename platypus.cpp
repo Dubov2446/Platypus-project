@@ -46,7 +46,6 @@ void Platypus::eat()
 
 void Platypus::hatch()
 {
-    
     this->setAlive(true);
     this->setMutant(false);
     this->setAge(0);
@@ -89,7 +88,7 @@ int Platypus::fileSize(ifstream& fin)
     string temp;
     while (!fin.eof())
     {
-        fin >> temp;
+        getline(fin, temp);
         size++;
     }
     return size;
