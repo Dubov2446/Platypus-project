@@ -77,8 +77,8 @@ string Platypus::randName(char g)
     fin.seekg(0, ios::beg);
     num = static_cast<int>(randNum(size, 1));
     cout << num;
-    //for (int i = 0; i < num; i++)
-    //    fin >> name;
+    for (int i = 0; i <= num; i++)
+        fin >> name;
     
     fin.close();
     return name;
@@ -102,7 +102,7 @@ float Platypus::randNum(int end, int addon, int pows)
     float value;
     srand(time(NULL));
     value = rand() % end + addon;
-    value /= pow(10, pows);
+    value /= (pow(10, pows));
     return value;
 }
 
