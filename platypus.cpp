@@ -60,26 +60,24 @@ void Platypus::hatch()
 
 string Platypus::randName(char g)
 {
-    string n;
+    string newName;
     int num,
         size;
     ifstream fin;
-    
     if (g == 'm')   // opens file depending on gender
         fin.open("m_name.txt");
     else if (g == 'f')
         fin.open("f_name.txt");
     if (!fin)   // exists if there's an error
         exit(0);
-    
     size = fileSize(fin);
     fin.clear();
     fin.seekg(0, ios::beg);
     num = static_cast<int>( randNum(size, 1));
     for (int i = 0; i < num; i++)
-        fin >> n;
+        getline(fin, newName);
     fin.close();
-    return n;
+    return newName;
 }
 
 int Platypus::fileSize(ifstream& fin)
