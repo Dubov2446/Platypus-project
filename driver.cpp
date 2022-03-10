@@ -16,5 +16,7 @@ int main()
     Platypus p1;
     p1.hatch();
     
+    p1.print();
+    
     return 0;
 }
