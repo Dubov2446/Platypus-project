@@ -36,7 +36,7 @@ Platypus::Platypus(char g, float w, short a, string n)
 
 void Platypus::eat()
 {
-    double randAmount;
+    float randAmount;
     randAmount = randNum(50, 1, 3);
     weight *= randAmount;
     return;
