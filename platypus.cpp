@@ -10,6 +10,7 @@
                    // successful and random num
 #include <ctime> // for random number
 #include <iostream> // for cout, cin, endl
+#include <cmath>
 #include <fstream>
 #include "platypus.h"
 using namespace std;
@@ -36,9 +37,24 @@ Platypus::Platypus(char g, float w, short a, string n)
 void Platypus::eat()
 {
     double randAmount;
-    randAmount = randNum(50, 1, true);
+    randAmount = randNum(50, 1, 3);
     weight *= randAmount;
     return;
+}
+
+Platypus Platypus::hatch()
+{
+    Platypus p1;
+    p1.setAlive(true);
+    p1.setMutant(false);
+    p1.setAge(0);
+    if (randNum(2) == 1)
+        p1.setGender('m');
+    else
+        p1.setGender('f');
+    p1.setWeight(randNum(10, 1, 1));
+    p1.setName = randName(p1.getGender());
+    return p1;
 }
 
 string Platypus::randName(char g)
@@ -79,13 +95,12 @@ int Platypus::fileSize(ifstream& fin)
     return size;
 }
 
-float Platypus::randNum(int end, int addon, bool convert)
+float Platypus::randNum(int end, int addon, int pows)
 {
     float value;
     srand(time(NULL));
     value = rand() % end + addon;
-    if (convert == true)
-        value /= 1000;
+    value /= pow(10, pows);
     return value;
 }
 

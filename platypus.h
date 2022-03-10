@@ -119,8 +119,8 @@ float randNum(int, int, bool)
     Precondition:   Called by other member functions with
                     3 double values. first is the ending
                     value, second is the additional value,
-                    and the third is a bool. while true
-                    converts the random value to %.
+                    and the third is an int that moves the
+                    decimal point of the value.
     Postcondition:  Returns a random value.
 int fileSize(ifstream&)
     Precondition:   Called by other member functions with
@@ -146,7 +146,7 @@ private:
     bool mutant;
     // helper functions
     std::string randName(char);
-    float randNum(int, int addon = 0, bool convert = false);
+    float randNum(int, int addon = 0, int pows = 0);
     int fileSize(std::ifstream&);
 public:
     // constructors
