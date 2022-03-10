@@ -17,6 +17,7 @@ using namespace std;
 
 Platypus::Platypus()
 {
+    srand(time(NULL));
     weight = 0.0;
     age = 0;
     name = "";
@@ -26,6 +27,7 @@ Platypus::Platypus()
 }
 Platypus::Platypus(char g, float w, short a, string n)
 {
+    srand(time(NULL));
     gender = g;
     weight = w;
     age = a;
@@ -96,7 +98,6 @@ int Platypus::fileSize(ifstream& fin)
 float Platypus::randNum(int end, int addon, int pows)
 {
     float value;
-    srand(time(NULL));
     value = rand() % end + addon;
     value /= pow(10, pows);
     return value;
