@@ -13,5 +13,8 @@ using namespace std;
 
 int main()
 {
-  return 0;
+    Platypus p1;
+    p1.hatch();
+    
+    return 0;
 }
