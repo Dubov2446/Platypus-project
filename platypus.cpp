@@ -38,7 +38,7 @@ void Platypus::eat()
 {
     float randAmount;
     randAmount = randNum(50, 1, 3);
-    weight *= randAmount;
+    weight += (weight * randAmount);
     return;
 }
 
@@ -59,7 +59,7 @@ Platypus Platypus::hatch()
 
 string Platypus::randName(char g)
 {
-    string name;
+    string n;
     int num,
         size;
     ifstream fin;
@@ -68,7 +68,6 @@ string Platypus::randName(char g)
         fin.open("m_name.txt");
     else if (g == 'f')
         fin.open("f_name.txt");
-        
     if (!fin)   // exists if there's an error
         exit(0);
     
@@ -77,9 +76,9 @@ string Platypus::randName(char g)
     fin.seekg(0, ios::beg);
     num = static_cast<int>( randNum(size));
     for (int i = 0; i < num; i++)
-        fin >> name;
+        fin >> n;
     fin.close();
-    return name;
+    return n;
 }
 
 int Platypus::fileSize(ifstream& fin)
