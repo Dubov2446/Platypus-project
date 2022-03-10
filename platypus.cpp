@@ -53,7 +53,7 @@ void Platypus::hatch()
     else
         this->setGender('f');
     this->setWeight(randNum(10, 1, 1));
-    this->setName( randName( p1.getGender()));
+    this->setName( randName( this->getGender()));
     return;
 }
 
