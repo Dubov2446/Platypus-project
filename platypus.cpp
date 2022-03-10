@@ -53,7 +53,7 @@ Platypus Platypus::hatch()
     else
         p1.setGender('f');
     p1.setWeight(randNum(10, 1, 1));
-    p1.setName = randName(p1.getGender());
+    p1.setName( randName( p1.getGender()));
     return p1;
 }
 
