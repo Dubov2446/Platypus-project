@@ -75,9 +75,8 @@ string Platypus::randName(char g)
     size = fileSize(fin);
     fin.clear();
     fin.seekg(0, ios::beg);
-    num = randNum(size, 1);
-    
-    for (int i = 0; i <= num; i++)
+    num = static_cast<int>(randNum(size, 1));
+    for (int i = 0; i < num; i++)
         fin >> name;
     
     fin.close();
