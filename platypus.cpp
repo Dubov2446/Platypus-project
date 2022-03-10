@@ -77,7 +77,6 @@ string Platypus::randName(char g)
     fin.clear();
     fin.seekg(0, ios::beg);
     num = static_cast<int>( randNum(size, 1));
-    cout << num << endl;
     for (int i = 0; i < num; i++)
         fin >> n;
     fin.close();
