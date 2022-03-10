@@ -38,23 +38,32 @@ Platypus::Platypus(char g, float w, short a, string n)
 
 void Platypus::eat()
 {
-    float randAmount;
-    randAmount = randNum(50, 1, 3);
-    weight += (weight * randAmount);
+    try
+    {
+        if ( !(alive) )
+            throw "Cannot feed a dead platypus";
+        float randAmount;
+        randAmount = randNum(50, 1, 3);
+        weight += (weight * randAmount);
+    }
+    catch (const char* msg)
+    {
+        cerr << msg << endl;
+    }
     return;
 }
 
 void Platypus::hatch()
 {
-    this->setAlive(true);
-    this->setMutant(false);
-    this->setAge(0);
+    alive = true;
+    mutant = false;
+    age = 0;
     if (randNum(2) == 1)
-        this->setGender('m');
+        gender = 'm';
     else
-        this->setGender('f');
-    this->setWeight(randNum(10, 1, 1));
-    this->setName( randName( this->getGender()));
+        gender = 'f';
+    weight = randNum(10, 1, 1);
+    name = randName(gender);
     return;
 }
 
