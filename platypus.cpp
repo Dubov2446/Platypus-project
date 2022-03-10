@@ -90,7 +90,7 @@ int Platypus::fileSize(ifstream& fin)
     while (!fin.eof())
     {
         fin >> temp;
-        if (name != "")
+        if (temp != "\n")
             size++;
     }
     return size;
