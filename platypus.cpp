@@ -109,30 +109,57 @@ float Platypus::randNum(int end, int addon, int pows)
     return value;
 }
 
-// FIGHT FUNCTION IS NOT DONE, NEED TO LOOK AT THIS A BIT MORE
-void Platypus::fight(Platypus right){ // data type for function
-    int randomNumber;                   // Platypus or void?
+Platypus Platypus::fight(Platypus left, Platypus right){
+    int randomNumber;
     srand(time(NULL));
-    randomNumber = rand() % (100) + 1;
-    
+    randomNumber = (rand() % (100) + 1);
+
     float fightRatio;
-    fightRatio = ((this->getWeight() / right.getWeight()) * 50.0);
+
+    fightRatio = ((left.getWeight() / right.getWeight()) * 50.0);
+
+    if (randomNumber < fightRatio){
+        return left; // this is the "calling" platypus
+    }
+    else{
+        return right;
+    }
+}
+
+void Platypus::ageMe(){
+    srand(time(NULL));
+    randomNumber = (rand() % (100) + 1); // random num from 1 - 100
     
+    this->age++; // increments objects age.
+
+    if(randomNumber < 3){ // 2% chance
+        this->mutant = true;
+    }
+
+    chanceDying = this->weight * 10.0;
     
+    if(this->weight >= 10.0){
+        this->alive = false;
+        return; // ends because if it weighs 10 or more lbs, it dies 100%
+    }
+    else if(randomNumber <= chanceDying){
+        this->alive = false;
+    }
+    return;
 }
 
 void Platypus::print(){
-    cout << "Weight: " << this->getWeight() << endl;
-    cout << "Age: " << this->getAge() << endl;
-    cout << "Name: " << this->getName() << endl;
-    cout << "Gender: " << this->getGender() << endl;
-    if(this->getAlive()){
+    cout << "Weight: " << this->weight << endl;
+    cout << "Age: " << this->age << endl;
+    cout << "Name: " << this->name << endl;
+    cout << "Gender: " << this->gender << endl;
+    if(this->alive){
         cout << "They are alive" << endl;
     }
     else{
         cout << "They are not alive" << endl;
     }
-    if(this->getMutant()){
+    if(this->mutant){
         cout << "They are mutant" << endl;
     }
     else{
