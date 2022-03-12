@@ -151,7 +151,7 @@ private:
 public:
     // constructors
     Platypus();
-    Platypus(char, float w=0.0, short a=0, std::string n="");
+    Platypus(char, float, short, std::string);
     ~Platypus() { }
     // mutators
     void setWeight(float w) { weight = w; }

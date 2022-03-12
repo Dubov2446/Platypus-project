@@ -28,8 +28,14 @@ Platypus::Platypus()
 Platypus::Platypus(char g, float w, short a, string n)
 {
     srand(time(NULL));
+    if ( g != 'f' || g != 'm')
+        g = 'm';
     gender = g;
+    if (w <= 0)
+        w = 0.1;
     weight = w;
+    if (a < 0)
+        a = 0;
     age = a;
     name = n;
     alive = true;
