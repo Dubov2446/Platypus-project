@@ -109,24 +109,26 @@ float Platypus::randNum(int end, int addon, int pows)
     return value;
 }
 
-Platypus Platypus::fight(Platypus left, Platypus right){
+void Platypus::fight(Platypus right){
     int randomNumber;
     srand(time(NULL));
     randomNumber = (rand() % (100) + 1);
 
     float fightRatio;
 
-    fightRatio = ((left.getWeight() / right.getWeight()) * 50.0);
+    fightRatio = ((getWeight() / right.getWeight()) * 50.0);
 
     if (randomNumber < fightRatio){
-        return left; // this is the "calling" platypus
+        right.getAlive = false;
     }
     else{
-        return right;
+        getAlive = false;
     }
 }
 
 void Platypus::ageMe(){
+    int randNumber;
+    float chanceDying;
     srand(time(NULL));
     randomNumber = (rand() % (100) + 1); // random num from 1 - 100
     
