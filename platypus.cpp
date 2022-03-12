@@ -119,15 +119,15 @@ void Platypus::fight(Platypus right){
     fightRatio = ((getWeight() / right.getWeight()) * 50.0);
 
     if (randomNumber < fightRatio){
-        right.getAlive = false;
+        right.getAlive(false);
     }
     else{
-        getAlive = false;
+        getAlive(false);
     }
 }
 
 void Platypus::ageMe(){
-    int randNumber;
+    int randomNumber;
     float chanceDying;
     srand(time(NULL));
     randomNumber = (rand() % (100) + 1); // random num from 1 - 100
