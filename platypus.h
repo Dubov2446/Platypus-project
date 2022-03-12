@@ -15,7 +15,9 @@ Platypus()
 Platypus(char, float, short, string)
     Precondition:   An instance of Platypus is declared.
     Postcondition:  gender, weight, age, and name are
-                    initialized to parameter values;
+                    initialized to parameter values,
+                    unless they're invalid, then it's
+                    set to defualt values;
                     alive is initialized to true;
                     mutant is initialized to false.
 
