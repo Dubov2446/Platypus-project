@@ -119,10 +119,10 @@ void Platypus::fight(Platypus right){
     fightRatio = ((getWeight() / right.getWeight()) * 50.0);
 
     if (randomNumber < fightRatio){
-        right.getAlive(false);
+        right.setAlive(false);
     }
     else{
-        getAlive(false);
+        setAlive(false);
     }
 }
 
