@@ -115,7 +115,7 @@ float Platypus::randNum(int end, int addon, int pows)
     return value;
 }
 
-void Platypus::fight(Platypus right){
+void Platypus::fight(Platypus& right){
     int randomNumber;
     srand(time(NULL));
     randomNumber = (rand() % (100) + 1);

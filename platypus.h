@@ -171,7 +171,7 @@ public:
     bool getMutant() { return mutant; }
     // other member functions
     void ageMe();
-    void fight(Platypus);
+    void fight(Platypus&);
     void eat();
     void hatch();
     void print();
