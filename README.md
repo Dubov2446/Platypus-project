@@ -56,7 +56,7 @@ Platypus-project finals week
 | void ageMe() | platypus.h | member function |
 | void fight(Platypus) | platypus.h | member function |
 | void eat() | platypus.h | member function |
-| Platypus hatch() | platypus.h | member function |
+| void hatch() | platypus.h | member function |
 | string randName(char) | platypus.h | helper function |
 | float randNum(int, int, int) | platypus.h | helper function |
 | int fileSize(ifstream&) | platypus.h | helper function |
